@@ -87,7 +87,7 @@ with open(studentfile,"r") as slist:
 # Get student name and scores (I suspect a list would be neater for this)
     for line in slist:
         student= line.strip("\r\n").split(",")
-        print student[0]
+        print (student[0])
         sname = student[0] #student name
         scode = int(student[1])
         snet = int(student[2])
@@ -102,41 +102,41 @@ with open(studentfile,"r") as slist:
         print ("clist line: " + clist[scode])
         
 # Get co-ordinates for code         
-        scoord = clist[scode].strip("\r\n").split(",")
+        scoord = clist[scode+1].strip("\r\n").split(",")
         print("scoord is: ")
         print (scoord)
         scodex = int(scoord[1])
         scodey = int(scoord[2])
         
 # Get co-ordinates for net 
-        scoord = clist[snet].strip("\r\n").split(",")
+        scoord = clist[snet+1].strip("\r\n").split(",")
         print("scoord is: ")
         print (scoord)
         snetx = int(scoord[3])
         snety = int(scoord[4])
 
 # Get co-ordinates for search         
-        scoord = clist[ssearch].strip("\r\n").split(",")
+        scoord = clist[ssearch+1].strip("\r\n").split(",")
         print("scoord is: ")
         print (scoord)
         ssearchx = int(scoord[5])
         ssearchy = int(scoord[6])
         
-        scoord = clist[slogic].strip("\r\n").split(",")
+        scoord = clist[slogic+1].strip("\r\n").split(",")
         print("scoord is: ")
         print (scoord)
         slogicx = int(scoord[7])
         slogicy = int(scoord[8])
         
 # Get co-ordinates for tech 
-        scoord = clist[stech].strip("\r\n").split(",")
+        scoord = clist[stech+1].strip("\r\n").split(",")
         print("scoord is: ")
         print (scoord)
         stechx = int(scoord[9])
         stechy = int(scoord[10])
         
 # Get co-ordinates for hardware 
-        scoord = clist[shardware].strip("\r\n").split(",")
+        scoord = clist[shardware+1].strip("\r\n").split(",")
         print("scoord is: ")
         print (scoord)
         shardwarex = int(scoord[11])
