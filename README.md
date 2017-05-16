@@ -22,8 +22,10 @@ Contains the co-ordinates for the didderent points on the spider diagram
 _spider.png
 The main background image with the spiders web, characters and any custom graphics text required
 
-Included are __spider.svg and __spider_blank.png so you can create your own background.
-__spider.svg was created using Inkscape and is for those who use vector tools.
+Included are
+__spider.svg and __spider_blank.png so you can create your own background.
+
+__spider.svg was created using Inkscape and is for those who use vector tools like Inkscape or Illustrator
 __spider_blank.png is a bitmap and so more suitable to being used with Photoshop or GIMP
 
 On running the code the co-ordinates are read and then each students scores are read and plotted on the screen
