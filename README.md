@@ -30,3 +30,7 @@ It then goes through each student plotting and connecting their points by lines
 Once completed a .jpeg file is created using the students name as the filename
 
  Once done you will have individual jpeg files for each of the students with their scores plotted
+
+#Attribution
+Idea by Sway Grantham
+Images for the characters created by  Andrew Palfreyman
