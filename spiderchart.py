@@ -105,10 +105,7 @@ with open(studentfile,"r") as slist:
     for line in slist:
         student= line.strip("\r\n").split(",")
         for year in range (0,3):
-#            print "NOw doing year : " + str(year)
-#            print "linecolor is :" + str(linecolor[year])
             sname = student[0] #student name
-#            print sname
             sclass = student[1]
 
             scode = student[(year*7)+2]
@@ -147,61 +144,31 @@ with open(studentfile,"r") as slist:
             else:
                 shardware = 1
 
-#            scode = int(student[(year*7)+2])+1
-#            snet = int(student[(year*7)+3])+1
-#            ssearch = int(student[(year*7)+4])+1
-#            slogic = int(student[(year*7)+5])+1
-#            stech = int(student[(year*7)+6])+1
-#            shardware = int(student[(year*7)+7])+1
-            
-            print "sname before if is : " + str(sname)
-            print "sclass before if is : " + str(sclass)
-            print "scode before if is : " + str(scode)
-            print "snet before if is : " + str(snet)
-            print "ssearch before if is : " + str(ssearch)
-            print "Slogic before if is : " + str(slogic)
-            print "Stech before if is : " + str(stech)
-            print "Shardware before if is : " + str(shardware)
             
             # Check if ALL values are zero so no entry 
             if (scode != 1 and snet != 1 and ssearch != 1 and slogic != 1 and stech != 1 and shardware != 1):
-                
-#                print ("Len clist and scode coordinates")
                 print (len(clist))
-#                print ("scode  " + str(scode))
-#                print ("clist line: " + clist[scode])
-
                 # Get co-ordinates for code         
                 scoord = clist[scode].strip("\r\n").split(",")
-                print ("scode scoord: " + str(scoord))
-#                print("scoord is: ")
                 scodex = int(scoord[1])
                 scodey = int(scoord[2])
 
                 # Get co-ordinates for net 
                 scoord = clist[snet].strip("\r\n").split(",")
-                print("snet scoord: " + str(scoord))
-#                print (scoord)
                 snetx = int(scoord[3])
                 snety = int(scoord[4])
 
                 # Get co-ordinates for search         
                 scoord = clist[ssearch].strip("\r\n").split(",")
-                print("ssearch scoord is: " + str(scoord))
-#                print (scoord)
                 ssearchx = int(scoord[5])
                 ssearchy = int(scoord[6])
 
                 scoord = clist[slogic].strip("\r\n").split(",")
-                print("scoord is: ")
-                print (scoord)
                 slogicx = int(scoord[7])
                 slogicy = int(scoord[8])
 
                 # Get co-ordinates for tech 
                 scoord = clist[stech].strip("\r\n").split(",")
-                print("scoord is: ")
-                print (scoord)
                 stechx = int(scoord[9])
                 stechy = int(scoord[10])
 
